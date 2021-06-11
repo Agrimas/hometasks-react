@@ -1,0 +1,67 @@
+.container {
+    max-width: 350px;
+    background-color: greenyellow;
+    margin: 5px;
+    display: flex;
+}
+
+.avatar {
+    display: block;
+    align-self: end;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.message {
+    display: flex;
+    position: relative;
+    background-color: darkgreen;
+    color: white;
+    margin: 0 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.message:before, .message:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+}
+
+.message:before {
+    left: -8px;
+    width: 16px;
+    background-color: darkgreen;
+
+    z-index: 0;
+}
+
+.message:after {
+    left: -12px;
+    width: 12px;
+    background-color: greenyellow;
+    border-bottom-right-radius:12px;
+}
+
+.message__body {
+    margin-bottom: 5px;
+}
+
+.message__author {
+    color: mediumpurple;
+}
+
+.message__text {
+    margin: 0;
+}
+
+.message__time {
+    align-self: end;
+    font-size: 15px;
+    color: #aaa;
+    padding-left: 5px;
+}
