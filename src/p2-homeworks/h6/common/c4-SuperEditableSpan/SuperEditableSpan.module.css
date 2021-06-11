@@ -1,0 +1,10 @@
+.span{
+    padding: 2px;
+    text-decoration: underline;
+}
+.span:hover{
+    transition: 0.1s;
+    background-color: skyblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
